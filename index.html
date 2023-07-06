@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="menu.js"></script>
+
+</head>
+<body>
+
+	<header class="headerr">
+	<div class="logo"> 
+		<a href="index.html"><img src="ferroo.png" > </img></a>
+	
+	</header>
+    <nav class="menu-lateral">
+
+        <div class="btn-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div><!--btn-expandir-->
+
+        <ul>
+            <li class="item-menu ativo">
+                <a href="consulta.html">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Consulta</span>
+                </a>
+            </li>
+			
+			
+            <li class="item-menu">
+                <a href="consultaa.html">
+                    <span class="icon"><i class="bi bi-columns-gap"></i></span>
+                   <span class="txt-link">Histórico</span>
+                </a>
+            </li>
+            
+            <li class="item-menu">
+                <a href="login.html">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                   <span class="txt-link">Sair</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav><!--menu-lateral-->
+
+    <lord-icon
+    src="https://cdn.lordicon.com/lupuorrc.json"
+    trigger="loop"
+    style="width:250px;height:250px">
+</lord-icon>
+
+    <script src="menu.js"></script>
+	
+	<main class="main"> 
+		<div class="wrapper">
+			<div class="box">
+				<div class="input-bx">
+					<h2 class="upload-area-title">Upload File</h2>
+					<form action="">
+						<input type="file" id="upload" accept=".doc,.docx,.pdf" hidden>
+						<label for="upload" class="uploadlabel">
+							<span><i class="fa fa-cloud-upload"></i></span>
+							<p>Click To Upload </p>
+							
+							
+						</label>
+					</form>
+				</div>
+				
+				<div id="filewrapper">
+				<h3 class="uploaded"> Uploaded Documents </h3>
+			
+		<a class="button" href="#divOne">Enviar</a>
+		<div class="overlay" id="divOne">
+		<div class="wrapperr">
+			<h2 class="pr">Preencha a ficha do documento enviado</h2><a class="close" href="#">&times;</a>
+			<div class="content">
+				<div class="container">
+					<form>
+						<label class="labell">Tipo de documento</label>
+						<input placeholder="Tipo de documento" type="text">
+						<label class="labell">Nome do documento</label>
+						<input placeholder="Nome do documento" type="text">
+						<label class="labell">Data Enviada</label> 
+						<textarea iplaceholder="Data"></textarea>
+						<input type="submit" value="Enviar">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+				<!---<div class="showfilebox">
+					<div class="left">
+						<span class="filetype">PDF</span>
+						<h3> Ravi Web.pdf</h3>
+						</div>
+						<div class="rigth">
+							<span>&#215;</span>
+				</div>
+			</div> !--->
+		</div>
+				
+		
+	</div>
+	
+	</main>
+	
+	
+	
+	
+	<footer >
+
+  
+
+      <p class="rodi">Direitos Autorais © 2023 <strong class="rodii">Inova-Tech</strong> - Todos os direitos reservados</p>
+ 
+</footer>
+</body>
+</html>
